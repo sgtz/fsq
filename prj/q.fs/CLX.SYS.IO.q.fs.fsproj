@@ -52,8 +52,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
-    <None Include="start.md" />
-    <None Include="idea.md" />
+    <Folder Include="TEST\" />
     <None Include="trySimpleQ.fsx" />
     <Compile Include="misc.fs" />
     <Compile Include="interactiveQ.fs" />
