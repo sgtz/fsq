@@ -61,13 +61,13 @@
     <None Include="..\..\doc\example.md">
       <Link>doc\example.md</Link>
     </None>
+    <None Include="..\..\doc\winux.md">
+      <Link>doc\winux.md</Link>
+    </None>
     <None Include="trySimpleQ.fsx" />
     <Compile Include="misc.fs" />
     <Compile Include="interactiveQ.fs" />
     <None Include="tryInteractiveQ.fsx" />
-    <None Include="..\..\doc\winux.md">
-      <Link>doc\winux.md</Link>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
