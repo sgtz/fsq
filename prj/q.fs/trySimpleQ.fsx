@@ -6,7 +6,6 @@ open CLX.SYS.IO
 open CLX.SYS.IO.q
 open CLX.SYS.IO.Q
 
-
 let c = new c("", 5001)
 let k t = c.k(t)      // k: send and return (synchronous)
 let ks t = c.ks(t)    // k: send  (asynchronous)
@@ -23,10 +22,9 @@ d.x.y.[0]             // the key values
 d.y.x                 // non key column names
 d.x.y.[0]             // the non key column values
 
-QPretty.Print d       // ... currently breaking.
-
-
 QPretty.Print <| k "`a`b`c!1 2 3"
+
+QPretty.Print d       // ... currently breaking   TODO: fix
 
 // TODO: need to attach the pretty print function to FSI
 
