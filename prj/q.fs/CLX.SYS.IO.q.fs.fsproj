@@ -52,11 +52,22 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
-    <Folder Include="TEST\" />
+    <None Include="..\..\doc\start.md">
+      <Link>doc\start.md</Link>
+    </None>
+    <None Include="..\..\doc\qStart.md">
+      <Link>doc\qStart.md</Link>
+    </None>
+    <None Include="..\..\doc\example.md">
+      <Link>doc\example.md</Link>
+    </None>
     <None Include="trySimpleQ.fsx" />
     <Compile Include="misc.fs" />
     <Compile Include="interactiveQ.fs" />
     <None Include="tryInteractiveQ.fsx" />
+    <None Include="..\..\doc\winux.md">
+      <Link>doc\winux.md</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
