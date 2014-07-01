@@ -17,3 +17,4 @@ To get started, first download, install and run your free 32 bit version of KDB+
     q.exe -p 5001 
 
     / this will start q running on the localhost with port 5001
+
