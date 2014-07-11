@@ -3,10 +3,9 @@ fsQ
 
 *fsQ* provides a few F# friendly .cs connector extensions to KDB+ by Kx Systems (kx.com).
 
-
 ###What is KDB+?
 
-KDB+ is likely to be one of the fastest real-time and analytics database engines you'll ever come across... and independent performance research from https://stacresearch.com/ suggests this is also the case for the benchmarks they've designed.  
+KDB+ is likely to be one of the fastest real-time and analytics database engines you'll ever come across.  Independent tests from https://stacresearch.com/ also suggests that is also the case for the production-style queries that they've designed.  
 
 KDB+ consists of:
 
@@ -14,6 +13,9 @@ KDB+ consists of:
 
 * the languages q and k (what q-sql is implemented in).  
 
+* a mind-boggling amazing implementation in C by Arthur Whitney
+
+These and other factors lead to an agile, responsive programming experience.
 
 ###What is this project about?
 
@@ -21,13 +23,13 @@ There are a few different parts:
 
 * The connector itself is fairly solid.  The work has lead to a few minor improvements, mostly bug fixes to c.cs at code.kx.com.
 
+* tuple, list, and array friendly
+
+* the basics for doing language integrated exercises for learning and education purposes (more about that later).  
+
 * client-side only formatter.  This is experimental.  It walks structures that are returned by q.exe.  Soon to be included:
   the .Q.s formatter, so that it will look exactly the same as the q.exe console.  
   The exercise was to walk returned structures.  So far this is partially achieved.
-
-* tuple friendly
-
-* the basics for doing language integrated exercises for learning and education purposes (more about that later).  
 
 * more features, and possibly even a few unique ones, to come. 
 
@@ -55,8 +57,12 @@ Some feel that F# is a great companion to KDB+.  F# has a few things in common w
 * In time this connector may grow to encompass support for other CLR languages.  This project
   will aim to provide this from F#.  For basic connector support for C# (and perhaps even F# depending on 
   what you are after), the c.cs connector to be found at code.kx.com is the most production ready.  The 
-  c.cs code here is a little out of date here (to be remedied), and it also contains a few minor extensions
+  c.cs code here is a little out of date (to be remedied), and it also contains a few minor extensions
   (such as support for +/- infinity, etc).
+
+###Breaking news
+
+The 32 bit version of KDB+ is now free to use in either a commercial or a non-commercial capacity.  That's huge.  The 32 bit version may sound humble, but *I think* a single threaded version of this outperformed many competing systems in recent history.  I'm just saying that this humble offering *still* packs a mean punch.  It's not to be sniffed at.  Not a bad place to start if you think that you might need to scale out in a painless way.
 
 
 ##Getting involved
