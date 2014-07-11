@@ -1,11 +1,11 @@
 fsq
 ===
 
-So far, **fsq** provides a few F# friendly cs connector extensions to KDB+ by Kx Systems (kx.com).  In time, this may grow to have
+*fsq** provides a few F# friendly .cs connector extensions to KDB+ by Kx Systems (kx.com).
 
 ###What is KDB+?
 
-In the opinion of this writer at least, KDB+ is likely to be one of the fastest real-time and / or analytics databases you'll ever come across... and independent performance research from https://stacresearch.com/ suggests this is also the case for the benchmarks they've designed.  
+KDB+ is likely to be one of the fastest real-time and / or analytics databases you'll ever come across... and independent performance research from https://stacresearch.com/ suggests this is also the case for the benchmarks they've designed.  
 
 KDB+ consists of:
 

@@ -52,11 +52,11 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
-    <None Include="..\..\doc\start.md">
-      <Link>doc\start.md</Link>
-    </None>
     <None Include="..\..\README.md">
       <Link>doc\README.md</Link>
+    </None>
+    <None Include="..\..\doc\start.md">
+      <Link>doc\start.md</Link>
     </None>
     <None Include="..\..\doc\qStart.md">
       <Link>doc\qStart.md</Link>
