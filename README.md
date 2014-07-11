@@ -37,7 +37,7 @@ There are a few different parts:
 
 Some feel that F# is a great companion to KDB+.  F# has a few things in common with KDB+:
 
-* F# has a version of right-to-left in the form of pipeline operators <| and |>.  While F# is more verbose than Q, F# is 
+* F# has a version of right-to-left (or left-of-right) in through its pipeline operators <| and |>.  While F# is more verbose than Q, F# is 
   more expressive and succinct than any other OO language on the CLR.  
 
 * Lists and Sequences are at the heart of F# in the same way as these concepts are central to Q
