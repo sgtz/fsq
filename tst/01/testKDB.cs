@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using PRX.SYS.IO.KDB;
-using PRX.SYS.IO.kx;
+using CLX.SYS.IO.q;
 
 namespace PRX.SYS.IO.KDB.Test
 {

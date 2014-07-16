@@ -51,38 +51,53 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
     <Compile Include="TestQToFsTypeIO.fs" />
     <Compile Include="Test_fs_c_extensions.fs" />
     <None Include="Script.fsx" />
-    <None Include="Integration Ideas.md" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
     <Reference Include="FsUnit.CustomMatchers">
-      <HintPath>..\..\..\..\..\..\..\..\..\RTK\LIB\nuget\FsUnit.xUnit.1.2.1.2\Lib\Net40\FsUnit.CustomMatchers.dll</HintPath>
+      <HintPath>..\..\sln\packages\FsUnit.xUnit.1.3.0.1\Lib\net40\FsUnit.CustomMatchers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FsUnit.NUnit">
+      <HintPath>..\..\sln\packages\FsUnit.1.3.0.1\Lib\Net40\FsUnit.NUnit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="FsUnit.Xunit">
-      <HintPath>..\..\..\..\..\..\..\..\..\RTK\LIB\nuget\FsUnit.xUnit.1.2.1.2\Lib\Net40\FsUnit.Xunit.dll</HintPath>
+      <HintPath>..\..\sln\packages\FsUnit.xUnit.1.3.0.1\Lib\net40\FsUnit.Xunit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="NHamcrest">
-      <HintPath>..\..\..\..\..\..\..\..\..\RTK\LIB\nuget\FsUnit.xUnit.1.2.1.2\Lib\Net40\NHamcrest.dll</HintPath>
+      <HintPath>..\..\sln\packages\FsUnit.xUnit.1.3.0.1\Lib\net40\NHamcrest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\sln\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="xunit">
-      <HintPath>..\..\..\..\..\..\..\..\..\RTK\LIB\nuget\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
+      <HintPath>..\..\sln\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <ProjectReference Include="..\..\PRJ\q.fs\PRX.SYS.IO.kx.fs.fsproj">
-      <Name>PRX.SYS.IO.kx.fs</Name>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\prj\q.fs\CLX.SYS.IO.q.fs.fsproj">
+      <Name>CLX.SYS.IO.q.fs</Name>
       <Project>{d34a67eb-635f-462a-b77b-debca3b1c105}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\PRJ\q\PRX.SYS.IO.kx.csproj">
-      <Name>PRX.SYS.IO.kx</Name>
+    <ProjectReference Include="..\..\prj\q\CLX.SYS.IO.q.csproj">
+      <Name>CLX.SYS.IO.q</Name>
       <Project>{308c0a6f-96a1-4f87-838c-cbdbd144c725}</Project>
       <Private>True</Private>
     </ProjectReference>

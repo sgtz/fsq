@@ -2,15 +2,16 @@
 open Xunit
 open FsUnit.Xunit
 open System
-open PRX.SYS.IO.kx
-open PRX.SYS.IO.kx.fs
+open CLX.SYS.IO
+open CLX.SYS.IO.q
+open CLX.SYS.IO.Q
 
 module c_cs_q_io_via_fs = 
           
     let c = new c("localhost", 5001);
-    let k t = c.kt(t)               // k send and return
-    let ks t = c.kst(t)             // k send 
-    let kd t = c.kdt(t)             // k do.  Send, but do not return
+    let k t = c.k(t)      // k: send and return (synchronous)
+    let ks t = c.ks(t)    // k: send  (asynchronous)
+    let kr t = c.kr(t)    // k: synchronous.  No return 
 
     let [<Fact>] ``isnu``() = 
         let xx =12.2
@@ -89,7 +90,7 @@ module c_cs_q_io_via_fs =
 
         // types via character: bg xhijefcspmdznuvt
         let test = c.NULL('i')
-        let Ai = [|c.NULL('i');C.getw('i');C.geta('i')|]
-        let Az = [|c.NULL('i');C.getw('i');C.geta('i')|]
+        let Ai = [|c.NULL('i');CLX.SYS.IO.q.c.getw('i');CLX.SYS.IO.q.c.geta('i')|]    // TODO: C# .getw / geta is not visible.  It should be.  Investigate.
+        let Az = [|c.NULL('i');CLX.SYS.IO.q.c.getw('i');CLX.SYS.IO.q.c.geta('i')|]    
         let Vs = c.k("()")
         ()

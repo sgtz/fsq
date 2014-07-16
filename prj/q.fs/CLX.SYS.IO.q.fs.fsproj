@@ -67,6 +67,7 @@
     <None Include="..\..\doc\winux.md">
       <Link>doc\winux.md</Link>
     </None>
+    <None Include="app.config" />
     <None Include="trySimpleQ.fsx" />
     <Compile Include="misc.fs" />
     <Compile Include="interactiveQ.fs" />
@@ -77,6 +78,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\sln\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />

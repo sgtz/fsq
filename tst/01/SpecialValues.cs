@@ -1,4 +1,4 @@
-﻿using PRX.SYS.IO.kx;
+﻿using CLX.SYS.IO.q;
 
 namespace PRX.SYS.IO.KDB.Test
 {

@@ -7,15 +7,18 @@ open CLX.SYS.IO.q
 open CLX.SYS.IO.Q
 
 let c = new c("", 5001)
-let k t = c.k(t)      // k: send and return (synchronous)
-let ks t = c.ks(t)    // k: send  (asynchronous)
-let kr t = c.kr(t)    // k: synchronous.  No return 
+let q t = c.q(t)      // k: send and return (synchronous)
+let qs t = c.qs(t)    // k: send  (asynchronous)
+let qr t = c.qr(t)    // k: synchronous.  No return 
 
 // create temporary in-memory table
-kr "tmp:([x:1+til 10] v1:20+til 10; v2:200+til 10)"   
-let o=k "select from tmp" 
+qr "tmp:([x:1+til 10] v1:20+til 10; v2:200+til 10)"   
+q "tmp:([x:1+til 10] v1:20+til 10; v2:200+til 10)"   
+let o=q "select from tmp" 
+o
 
-let d=k "select from tmp" :?> q.Dict |> (fun x->q.Tbl(x))
+
+let d=q "select from tmp" :?> q.Dict |> (fun x->CLX.SYS.IO.q.Tbl(x))
 
 d.x.x                 // key / compount key column names
 d.x.y.[0]             // the key values
