@@ -44,7 +44,6 @@ module UtilM =
     | [Some x;Some y;None] -> Q1_ cx (s,x,y)
     | [Some x;Some y;Some z] -> Q1_ cx (s,x,y,z)
     | _ -> failwith "`nyi"
-    // TODO: !!! MOVE THIS FUNCTION TO misc.fs.  Let member private this.doQ_output branch to this function when it needs to.
 
   // ------------------------------------------------------------------------------------------------------------------------------------------------
   // extension

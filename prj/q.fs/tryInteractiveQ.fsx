@@ -1,5 +1,9 @@
 ﻿// currying
 
+//   q t
+// or
+//   q (s,[x[,y[,z]]]]), where q is the verb, s is a string, and t is a tuple
+
 #r @"bin\Debug\CLX.SYS.IO.q.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fs.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fmt.dll"

@@ -1,6 +1,8 @@
 ﻿// currying ver 2.
 
-// F# form q s t where q is the verb, s is the string, and t is a tuple of ([x[,y[,z]]]])
+//   q s t
+// or
+//   q s ([x[,y[,z]]]]), where q is the verb, s is a string, and t is a tuple
 
 #r @"bin\Debug\CLX.SYS.IO.q.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fs.dll"
