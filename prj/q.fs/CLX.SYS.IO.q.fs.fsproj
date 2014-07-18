@@ -68,11 +68,11 @@
     <None Include="..\..\doc\winux.md">
       <Link>doc\winux.md</Link>
     </None>
-    <None Include="tryInteractiveQ2.fsx" />
-    <None Include="trySimpleQ.fsx" />
     <Compile Include="Connect.fs" />
     <Compile Include="QFsiConsole.fs" />
+    <None Include="trySimpleQ.fsx" />
     <None Include="tryInteractiveQ.fsx" />
+    <None Include="tryInteractiveQ2.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

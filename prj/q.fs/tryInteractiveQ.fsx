@@ -1,4 +1,6 @@
-﻿#r @"bin\Debug\CLX.SYS.IO.q.dll"
+﻿// currying
+
+#r @"bin\Debug\CLX.SYS.IO.q.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fs.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fmt.dll"
 

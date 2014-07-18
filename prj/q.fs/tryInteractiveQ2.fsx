@@ -1,6 +1,6 @@
-﻿// Experimental syntax
+﻿// currying ver 2.
 
-// an F# form that is similar to q s t where q is the verb , s is the string, and t is a tuple of ([x[,y[,z]]]])
+// F# form q s t where q is the verb, s is the string, and t is a tuple of ([x[,y[,z]]]])
 // eg.
 // q "{til 5}" ()
 // q "{til x}" (5)
@@ -22,16 +22,16 @@ let Q x = exp_Q c x
 
 let q s t = c.exp_q s t      // k: send and return (synchronous)
 let qs s t = c.exp_qs s t    // k: send  (asynchronous)
-let qr s t = c.exp_qr s t      // k: synchronous.  No return 
+let qr s t = c.exp_qr s t    // k: synchronous.  No return 
 
-let _0N = c.NULL('i')  // hacky -- could be any value
+let _0N = c.NULL('i')        // hacky -- could be any value
 
 q "{til x}" (5)
 q "{x+til y}" (5,6)
 
 Q "{x+til y}" (5,6)
 
-q "{til 5}" _0N           // no such thing as an empty tuple ie. q "{til 5}" ()
+q "{til 5}" _0N              // no such thing as an empty tuple ie. q "{til 5}" ()
 q "{x+til y}" (5,6)
 q "{x*y+til z}" (5,6,7)
 
