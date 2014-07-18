@@ -25,7 +25,7 @@ d.x.y.[0]             // the key values
 d.y.x                 // non key column names
 d.x.y.[0]             // the non key column values
 
-QPretty.Print <| k "`a`b`c!1 2 3"
+QPretty.Print <| q "`a`b`c!1 2 3"
 
 QPretty.Print d       // ... currently breaking   TODO: fix
 

@@ -538,7 +538,7 @@ type c(host,port,user,maxBufferSize) =
 // create conversion (opt. implicit) methods for each of these:
 // month, date, minute, second, KTimespan, KNanoDateTime, Dict, TBL, TFlip
 
-/// experiemental are
+/// experiemental are implemented in this type extension
 type c with
     member __.exp_q s o =  
         match tupleToList o with
