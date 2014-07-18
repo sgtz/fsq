@@ -52,6 +52,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="..\..\README.md">
       <Link>doc\README.md</Link>
     </None>
@@ -67,10 +68,10 @@
     <None Include="..\..\doc\winux.md">
       <Link>doc\winux.md</Link>
     </None>
-    <None Include="app.config" />
+    <None Include="tryInteractiveQ2.fsx" />
     <None Include="trySimpleQ.fsx" />
-    <Compile Include="misc.fs" />
-    <Compile Include="interactiveQ.fs" />
+    <Compile Include="Connect.fs" />
+    <Compile Include="QFsiConsole.fs" />
     <None Include="tryInteractiveQ.fsx" />
   </ItemGroup>
   <ItemGroup>

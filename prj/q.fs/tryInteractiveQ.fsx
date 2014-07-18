@@ -4,7 +4,7 @@
 
 open CLX.SYS.IO
 open CLX.SYS.IO.Q
-#load "interactiveQ.fs"
+#load "QFsiConsole.fs"
 open UtilM
 
 let c = new c("", 5001)
@@ -25,7 +25,7 @@ Q("{x+til y}",5,6)
 // Q "{x+til y}" 5 6  // it would be nice to enable a flexible style along these lines, but there's no overloading in F#
 
 
-// TODO: create an F# form that is similar to q s t where q is the verb, s is the string, and t is a tuple of ([x[,y[,z]]]])
+// TODO: create an F# form that is similar to q s t where q is the verb , s is the string, and t is a tuple of ([x[,y[,z]]]])
 // ie.
 // q "{til 5}" ()
 // q "{til x}" (5)

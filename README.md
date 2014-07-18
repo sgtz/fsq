@@ -1,21 +1,32 @@
 fsQ
 ===
 
-*fsQ* provides a few F# friendly .cs connector extensions to KDB+ by Kx Systems (kx.com).
+*fsQ* brings you a few F# friendly *c.cs* connector extensions to KDB+ by Kx Systems (kx.com).
 
 ###What is KDB+?
 
-KDB+ is likely to be one of the fastest real-time and analytics database engines you'll ever come across.  Independent tests from https://stacresearch.com/ also suggests that is also the case for the production-style queries that they've designed.  
+Probably KDB+ is going to be one of the fastest real-time and analytics database engines you'll ever come across.  Independent tests from https://stacresearch.com/ suggest that is at least the case for the production-style queries that they've designed.
 
 KDB+ consists of:
 
-* q-sql: a more expressive SQL that is succinct, compact, and adept at analytics
+* *q-sql*: a more expressive SQL that is succinct, compact, and adept at analytics
 
-* the languages q and k (what q-sql is implemented in).  
+* the languages *q* and *k* (what *q-sql* is implemented in).  
 
 * a mind-boggling amazing implementation in C by Arthur Whitney
 
-These and other factors lead to an agile, responsive programming experience.
+
+A few things that KDB+ users enjoy:
+
+* an agile, responsive programming experience.  
+
+* KDB+ helps you to focus on solving business problems rather than prematurely optimising your solution to be skewed towards 
+historical or real-time (as we are often forced to), because KDB+ has been shown to elegantly handles both cases.
+
+* great for general purpose programming, but suits high performance computing equally well
+
+* you don't have to throw away your shema
+
 
 ###What is this project about?
 
@@ -55,7 +66,7 @@ Some feel that F# is a great companion to KDB+.  F# has a few things in common w
   lends itself to problem solving and the Iversonian idea of, "notation as a tool of thought."
 
 * In time this connector may grow to encompass support for other CLR languages.  This project
-  will aim to provide this from F#.  For basic connector support for C# (and perhaps even F# depending on 
+  will aim to provide this CLR support from F#.  For basic connector support for C# (and perhaps even F# depending on 
   what you are after), the c.cs connector to be found at code.kx.com is the most production ready.  The 
   c.cs code here is a little out of date (to be remedied), and it also contains a few minor extensions
   (such as support for +/- infinity, etc).

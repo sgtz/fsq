@@ -46,3 +46,7 @@ module UtilM =
     | _ -> failwith "`nyi"
     // TODO: !!! MOVE THIS FUNCTION TO misc.fs.  Let member private this.doQ_output branch to this function when it needs to.
 
+  // ------------------------------------------------------------------------------------------------------------------------------------------------
+  // extension
+  let exp_Q (cx:c) s t = 
+    Q cx (listToTuple <| (s::tupleToList t))

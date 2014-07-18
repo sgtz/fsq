@@ -535,6 +535,34 @@ type c(host,port,user,maxBufferSize) =
     /// qconnection
     new(host,port,user) = new c(host,port,user,c.DefaultMaxBufferSize)
 
-
 // create conversion (opt. implicit) methods for each of these:
 // month, date, minute, second, KTimespan, KNanoDateTime, Dict, TBL, TFlip
+
+/// experiemental are
+type c with
+    member __.exp_q s o =  
+        match tupleToList o with
+        | [] -> __.k(string s)
+        | [a0] -> __.k(string s, a0)
+        | [a0;a1] -> __.k(string s, a0, a1)
+        | [a0;a1;a2] -> __.k(string s, a0, a1, a2)
+        | L -> raise(System.ArgumentException(sprintf "only up to s (x,y,z) can be supplied.  %i arguments were presented" L.Length))       
+
+    member __.exp_qs s o =
+        match tupleToList o with
+        | [] -> __.ks(string s)
+        | [a0] -> __.ks(string s, a0)
+        | [a0;a1] -> __.ks(string s, a0, a1)
+        | [a0;a1;a2] -> __.ks(string s, a0, a1, a2)
+        | L -> raise(System.ArgumentException(sprintf "only up to s (x,y,z) can be supplied.  %i arguments were presented" L.Length))       
+
+    member __.exp_qr s o =
+        match tupleToList o with
+        | [] -> __.kr(string s)
+        | [a0] -> __.kr(string s, a0)
+        | [a0;a1] -> __.kr(string s, a0, a1)
+        | [a0;a1;a2] -> __.kr(string s, a0, a1, a2)
+        | L -> raise(System.ArgumentException(sprintf "only up to (s,x,y,z) can be supplied.  %i arguments were presented" L.Length))       
+
+    // NB. a shorter version for experimental versions less error message
+    // Q cx (listToTuple <| (s::tupleToList t))    
