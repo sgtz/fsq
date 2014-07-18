@@ -10,14 +10,13 @@ open CLX.SYS.IO.Q
 open UtilM
 
 let c = new c("", 5001)
-
 let Q x = Q c x
-
-Q "til 10"
-
 let q t = c.q(t)      // k: send and return (synchronous)
 let qs t = c.qs(t)    // k: send  (asynchronous)
 let qr t = c.qr(t)    // k: synchronous.  No return 
+
+Q "til 10"
+
 
 q("{til x}",5)
 q("{x+til y}",5,6)

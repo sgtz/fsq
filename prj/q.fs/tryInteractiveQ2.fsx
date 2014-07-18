@@ -1,11 +1,6 @@
 ﻿// currying ver 2.
 
 // F# form q s t where q is the verb, s is the string, and t is a tuple of ([x[,y[,z]]]])
-// eg.
-// q "{til 5}" ()
-// q "{til x}" (5)
-// q "{x+til y}" (5,6)
-// q "{x*y+til z}" (5,6,7)
 
 #r @"bin\Debug\CLX.SYS.IO.q.dll"
 #r @"bin\Debug\CLX.SYS.IO.q.fs.dll"
@@ -17,9 +12,7 @@ open CLX.SYS.IO.Q
 open UtilM
 
 let c = new c("", 5001)
-
 let Q x = exp_Q c x
-
 let q s t = c.exp_q s t      // k: send and return (synchronous)
 let qs s t = c.exp_qs s t    // k: send  (asynchronous)
 let qr s t = c.exp_qr s t    // k: synchronous.  No return 
