@@ -1,7 +1,18 @@
 fsQ
 ===
 
-*fsQ* brings you a few F# friendly *c.cs* connector extensions to KDB+ by Kx Systems (kx.com).
+*fsQ* brings you a few F# friendly *c.cs* KDB+ connector extensions Kx Systems (kx.com).
+
+###Focus:
+
+* compatibility with the larger .net ecosystem through leveraging c.cs and staying away from F# features that are poorly supported elsewhere on the CLR.
+
+* a few other simple helpers like a blending Q Console and F# Interfactive (FSI).
+
+  Q "til 10"                         // from FSI .fsx window
+
+  q)til 10                           // returned in F# interactive
+  0 1 2 3 4 5 6 7 8 9      
 
 ###What is KDB+?
 
