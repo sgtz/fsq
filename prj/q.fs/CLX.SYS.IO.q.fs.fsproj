@@ -79,13 +79,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\sln\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <ProjectReference Include="..\q.fmt\CLX.SYS.IO.q.fmt.fsproj">
       <Name>CLX.SYS.IO.q.fmt</Name>
       <Project>{68ece738-3f02-47cf-b7f5-46cc499278b7}</Project>
