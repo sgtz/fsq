@@ -1,7 +1,9 @@
 fsQ
 ===
 
-*fsQ* brings you a few F# friendly *c.cs* KDB+ connector extensions Kx Systems (kx.com).
+*fsQ* gives you a few F# friendly *c.cs* KDB+ connector extensions 
+
+(see KDB+ by Kx.com -- there's a free full featured 32 bit version there available for download).
 
 ###Focus:
 
