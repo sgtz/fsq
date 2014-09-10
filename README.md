@@ -7,12 +7,14 @@ fsQ
 
 * compatibility with the larger .net ecosystem through leveraging c.cs and staying away from F# features that are poorly supported elsewhere on the CLR.
 
-* a few other simple helpers like a blending Q Console and F# Interfactive (FSI).
+* a few simple helpers like a blending Q Console and F# Interfactive (FSI).  For example, file.fsx:
 
-  Q "til 10"                         // from FSI .fsx window
+    Q "til 10"                         
 
-  q)til 10                           // returned in F# interactive
-  0 1 2 3 4 5 6 7 8 9      
+  returns the following when sent to FSI:
+
+    q)til 10                           
+    0 1 2 3 4 5 6 7 8 9      
 
 ###What is KDB+?
 
