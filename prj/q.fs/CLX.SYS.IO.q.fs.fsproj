@@ -80,7 +80,6 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <ProjectReference Include="..\q.fmt\CLX.SYS.IO.q.fmt.fsproj">
       <Name>CLX.SYS.IO.q.fmt</Name>
       <Project>{68ece738-3f02-47cf-b7f5-46cc499278b7}</Project>

@@ -60,7 +60,6 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <ProjectReference Include="..\q\CLX.SYS.IO.q.csproj">
       <Name>CLX.SYS.IO.q</Name>
       <Project>{308c0a6f-96a1-4f87-838c-cbdbd144c725}</Project>

@@ -83,8 +83,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="xunit">
       <HintPath>..\..\sln\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
       <Private>True</Private>
